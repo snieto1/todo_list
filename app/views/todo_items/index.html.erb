@@ -1,8 +1,13 @@
+
+
 <p id="notice"><%= notice %></p>
 
-<h1>Todo Items</h1>
+<h1>
+  <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span>
+  To-do-List
+  <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span></h1>
 
-<table>
+<table class="table table-bordered" id="background">
   <thead>
     <tr>
       <th>Description</th>
@@ -11,11 +16,11 @@
   </thead>
 
   <tbody>
-    <img src="assets/images/UM_logo.gif" alt="UMlogo"> 
+
     <% @todo_items.each do |todo_item| %>
       <tr>
         <td><%= todo_item.description %></td>
-        <td><%= link_to 'Show', todo_item %></td>
+        <td><%= link_to 'Show', todo_item, class: "btn btn-info show"%></td>
         <td><%= link_to 'Edit', edit_todo_item_path(todo_item) %></td>
         <td><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -25,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Todo Item', new_todo_item_path %>
+<%= link_to 'New Todo Item', new_todo_item_path, class: "new_todo"%>

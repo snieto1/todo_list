@@ -2,3 +2,29 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+.glyphicon-bitcoin {
+  color: darkgreen;
+}
+
+.btn-info {
+  color: black
+}
+
+.show:visited, .show {
+  color: black;
+}
+
+.new_todo {
+  color: red;
+  font-style: italic;
+  font-family: sans-serif;
+  font-size: 5em;
+}
+
+.table-bordered {
+  color: purple;
+  background: lightblue
+}
+
+}
