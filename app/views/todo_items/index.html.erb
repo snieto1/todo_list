@@ -11,9 +11,9 @@
   </thead>
 
   <tbody>
+    <img src="assets/images/UM_logo.gif" alt="UMlogo"> 
     <% @todo_items.each do |todo_item| %>
       <tr>
-        <img src="assets/images/UM_logo.gif" alt="UM logo"> 
         <td><%= todo_item.description %></td>
         <td><%= link_to 'Show', todo_item %></td>
         <td><%= link_to 'Edit', edit_todo_item_path(todo_item) %></td>
